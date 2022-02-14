@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+    web:
+      image: php:8.0-apache
+      volumes:
+        - .:/usr/src/html
+      build: .
+      ports:
+        - 8000:8080
